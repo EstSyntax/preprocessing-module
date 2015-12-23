@@ -1,0 +1,19 @@
+Programmi käivitamiseks (ajalehetekstide programmi näitel):
+
+Ühe kindla faili töötlemiseks (koos lausete loendamisega):
+python3 aja_eeltootlus.py --file sisendfail.xml --output-dir väljundfail_kuhu_kataloogi --count-sentences
+
+Ühe kindla faili töötlemiseks (ilma lausete loendamiseta):
+python3 aja_eeltootlus.py --file sisendfail.xml --output-dir valjundfail_kuhu_kataloogi
+
+Terve kausta xml-ide töötlemine (koos lausete loendamisega):
+python3 aja_eeltootlus.py --directory sisendkatalooginimi --output-dir valjundkatalooginimi --count-sentences
+
+Terve kausta xml-ide töötlemine (ilma lausete loendamiseta):
+python3 aja_eeltootlus.py --directory sisendkatalooginimi --output-dir valjundkatalooginimi
+
+Skriptis kasutamiseks (lausete loendamisega):
+cat sisendfail.xml | ./eeltootlus.py --count-sentences > valjundfail.xml
+
+Skriptis kasutamiseks (ilma loendamiseta):
+cat sisendfail.xml | ./eeltootlus.py > valjundfail.xml
